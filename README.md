@@ -157,3 +157,77 @@ Section:NewButton("Flashiest Swordsmen", "ButtonInfo", function() local args = {
 game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:InvokeServer(unpack(args))
 
 end)
+
+local Section = Tab:NewSection("PS+ CMDS")
+
+Section:NewButton("Give awk", "ButtonInfo", function()
+    local args = {
+    [1] = "Grant",
+    [2] = "GiveAwakening"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("No cd", "ButtonInfo", function()
+    local args = {
+    [1] = "SwitchServer",
+    [2] = "No Cooldown"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("No Dash cd", "ButtonInfo", function()
+    local args = {
+    [1] = "SwitchServer",
+    [2] = "No Dash Cooldown"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+
+Section:NewButton("Dual Movesets", "ButtonInfo", function()
+   local args = {
+    [1] = "SwitchServer",
+    [2] = "Dual Moveset"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+
+Section:NewButton("Instant awk", "ButtonInfo", function()
+   local args = {
+    [1] = "SwitchServer",
+    [2] = "Instant Awakening"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Inf awk", "ButtonInfo", function()
+    local args = {
+    [1] = "SwitchServer",
+    [2] = "Infinite Awakening"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("No speed debuff", "ButtonInfo", function()
+local args = {
+    [1] = "SwitchServer",
+    [2] = "No Speed Debuff"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:InvokeServer(unpack(args))
+
+end)
