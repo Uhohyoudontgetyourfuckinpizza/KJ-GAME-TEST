@@ -93,6 +93,51 @@ game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
 
 end)
 
+Section:NewButton("Maximum Blue", "ButtonInfo", function()
+    local args = {
+    [1] = "Flashy",
+    [2] = "Amplification : Blue",
+    [3] = {
+        ["player"] = game:GetService("Players").LocalPlayer,
+        ["pllayer"] = game:GetService("Players").LocalPlayer,
+        ["Player"] = game:GetService("Players").LocalPlayer
+    }
+}
+
+game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Metal Beatdown", "ButtonInfo", function()
+    local args = {
+    [1] = "Flashy",
+    [2] = "Metal Beatdown",
+    [3] = {
+        ["player"] = game:GetService("Players").LocalPlayer,
+        ["pllayer"] = game:GetService("Players").LocalPlayer,
+        ["Player"] = game:GetService("Players").LocalPlayer
+    }
+}
+
+game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Imaginary technique", "ButtonInfo", function()
+    local args = {
+    [1] = "Flashy",
+    [2] = "Imaginary Technique",
+    [3] = {
+        ["player"] = game:GetService("Players").LocalPlayer,
+        ["pllayer"] = game:GetService("Players").LocalPlayer,
+        ["Player"] = game:GetService("Players").LocalPlayer
+    }
+}
+
+game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
+end)
+
 local Section = Tab:NewSection("Rlly?")
 
 Section:NewButton("KJ", "ButtonInfo", function() local args = { [1] = "SwitchC", [2] = "KJ" }
