@@ -46,6 +46,21 @@ game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
 
 end)
 
+Section:NewButton("Flex works", "ButtonInfo", function()
+local args = {
+    [1] = "Combat",
+    [2] = "FLEX",
+    [3] = {
+        ["player"] = game:GetService("Players").LocalPlayer,
+        ["pllayer"] = game:GetService("Players").LocalPlayer,
+        ["Player"] = game:GetService("Players").LocalPlayer
+    }
+}
+
+game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
+end)
+
 Section:NewLabel("The honored one BASE")
 
 Section:NewButton("red", "ButtonInfo", function() local args = { [1] = "Flashy", [2] = "Red", [3] = { ["player"] = game:GetService("Players").LocalPlayer, ["pllayer"] = game:GetService("Players").LocalPlayer, ["Player"] = game:GetService("Players").LocalPlayer } }
