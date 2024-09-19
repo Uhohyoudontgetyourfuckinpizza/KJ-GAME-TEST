@@ -1,11 +1,11 @@
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("|Wave|", "DarkTheme")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Wave", "DarkTheme")
 
-local Tab = Window:NewTab("NJAKG")
+local Tab = Window:NewTab("Not just a kj game")
 
+local Section = Tab:NewSection("kj base moves")
 
-local Section = Tab:NewSection("kj base (not spammable)")
-Section:NewButton("Ravage (auto)", "This isnt spammable", function()
+Section:NewButton("Ravage", "ButtonInfo", function()
     local args = {
     [1] = "Combat",
     [2] = "Ravage",
@@ -20,7 +20,7 @@ game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
 
 end)
 
-Section:NewButton("Swift Kick", "ButtonInfo", function()
+Section:NewButton("Swift kick", "ButtonInfo", function()
     local args = {
     [1] = "Combat",
     [2] = "Swift Sweep",
@@ -35,8 +35,9 @@ game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
 
 end)
 
+
 Section:NewButton("Collertal Ruin", "ButtonInfo", function()
-local args = {
+    local args = {
     [1] = "Combat",
     [2] = "Collateral Ruin",
     [3] = {
@@ -50,7 +51,8 @@ game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
 
 end)
 
-Section:NewButton("Signature Kick", "ButtonInfo", function()
+
+Section:NewButton("Signature Kicl", "ButtonInfo", function()
     local args = {
     [1] = "Combat",
     [2] = "Signature Kick",
@@ -65,10 +67,10 @@ game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
 
 end)
 
-local Section = Tab:NewSection("KJ ULT MOVES(SPAMMABLE)")
+Section:NewLabel("kj ult moves SPAMMABLE")
 
 Section:NewButton("Stoic bomb", "ButtonInfo", function()
-    local args = {
+   local args = {
     [1] = "Combat",
     [2] = "BOMB",
     [3] = {
@@ -79,9 +81,12 @@ Section:NewButton("Stoic bomb", "ButtonInfo", function()
 }
 
 game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
 end)
 
-Section:NewButton("Dropkick", "ButtonInfo", function() game:GetService("ReplicatedStorage").KJ.Remote.DropKick:FireServer()
+Section:NewButton("Dropkick", "ButtonInfo", function()
+    game:GetService("ReplicatedStorage").KJ.Remote.DropKick:FireServer()
+
 end)
 
 Section:NewButton("Five seasons", "ButtonInfo", function()
@@ -98,25 +103,12 @@ Section:NewButton("Five seasons", "ButtonInfo", function()
 }
 
 game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
 end)
 
-Section:NewButton("UFW", "ButtonInfo", function()
-    local args = {
-    [1] = "Combat",
-    [2] = "FLEX",
-    [3] = {
-        ["player"] = game:GetService("Players").LocalPlayer,
-        ["pllayer"] = game:GetService("Players").LocalPlayer,
-        ["Player"] = game:GetService("Players").LocalPlayer
-    }
-}
+Section:NewLabel("The honored one BASE")
 
-game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
-end)
-
-local Section = Tab:NewSection("Gojo (not spammable)")
-
-Section:NewButton("Red", "ButtonInfo", function()
+Section:NewButton("red", "ButtonInfo", function()
     local args = {
     [1] = "Flashy",
     [2] = "Red",
@@ -128,9 +120,10 @@ Section:NewButton("Red", "ButtonInfo", function()
 }
 
 game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
 end)
 
-Section:NewButton("BLUE", "ButtonInfo", function()
+Section:NewButton("Blue", "ButtonInfo", function()
     local args = {
     [1] = "Flashy",
     [2] = "Blue",
@@ -142,6 +135,7 @@ Section:NewButton("BLUE", "ButtonInfo", function()
 }
 
 game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
 end)
 
 Section:NewButton("Beatdown", "ButtonInfo", function()
@@ -156,10 +150,11 @@ Section:NewButton("Beatdown", "ButtonInfo", function()
 }
 
 game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
 end)
 
-Section:NewButton("BLACK FLASH", "ButtonInfo", function()
-    local args = {
+Section:NewButton("Black flash", "ButtonInfo", function()
+   local args = {
     [1] = "Flashy",
     [2] = "Black Flash",
     [3] = {
@@ -170,9 +165,10 @@ Section:NewButton("BLACK FLASH", "ButtonInfo", function()
 }
 
 game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
-end) 
+end)
 
-local Section = Tab:NewSection("Gojo's Ult")
+
+Section:NewLabel("Honored one ULT moves")
 
 Section:NewButton("Maximum Red", "ButtonInfo", function()
     local args = {
@@ -186,84 +182,15 @@ Section:NewButton("Maximum Red", "ButtonInfo", function()
 }
 
 game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
+
 end)
 
-Section:NewButton("Maximum blue", "ButtonInfo", function()
-    local args = {
-    [1] = "Flashy",
-    [2] = "Amplification : Blue",
-    [3] = {
-        ["player"] = game:GetService("Players").LocalPlayer,
-        ["pllayer"] = game:GetService("Players").LocalPlayer,
-        ["Player"] = game:GetService("Players").LocalPlayer
-    }
-}
+local Tab = Window:NewTab("Character selection")
 
-game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
-end)
-
-Section:NewButton("Metal Beatdown", "ButtonInfo", function()
-    local args = {
-    [1] = "Flashy",
-    [2] = "Metal Beatdown",
-    [3] = {
-        ["player"] = game:GetService("Players").LocalPlayer,
-        ["pllayer"] = game:GetService("Players").LocalPlayer,
-        ["Player"] = game:GetService("Players").LocalPlayer
-    }
-}
-
-game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
-end)
-
-Section:NewButton("purple", "ButtonInfo", function()
-local args = {
-    [1] = "Flashy",
-    [2] = "Imaginary Technique",
-    [3] = {
-        ["player"] = game:GetService("Players").LocalPlayer,
-        ["pllayer"] = game:GetService("Players").LocalPlayer,
-        ["Player"] = game:GetService("Players").LocalPlayer
-    }
-}
-
-game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
-end)
-
-local Section = Tab:NewSection("Early access char base moves (wip)")
-
-Section:NewButton("Million Slashes", "ButtonInfo", function()
-    local args = {
-    [1] = "Flashy",
-    [2] = "Million Pricks",
-    [3] = {
-        ["player"] = game:GetService("Players").LocalPlayer,
-        ["pllayer"] = game:GetService("Players").LocalPlayer,
-        ["Player"] = game:GetService("Players").LocalPlayer
-    }
-}
-
-game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
-end)
-
-Section:NewButton("Blink", "ButtonInfo", function()
-   local args = {
-    [1] = "Flashy",
-    [2] = "Blink",
-    [3] = {
-        ["player"] = game:GetService("Players").LocalPlayer,
-        ["pllayer"] = game:GetService("Players").LocalPlayer,
-        ["Player"] = game:GetService("Players").LocalPlayer
-    }
-}
-
-game:GetService("ReplicatedStorage").Server:InvokeServer(unpack(args))
-end)
-
-local Section = Tab:NewSection("Character switch")
+local Section = Tab:NewSection("Betrayer")
 
 Section:NewButton("KJ", "ButtonInfo", function()
-  local args = {
+    local args = {
     [1] = "SwitchC",
     [2] = "KJ"
 }
@@ -272,7 +199,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:
 
 end)
 
-Section:NewButton("gojo", "ButtonInfo", function()
+Section:NewButton("HONORED ONE", "ButtonInfo", function()
     local args = {
     [1] = "SwitchC",
     [2] = "The Honoured One"
@@ -282,7 +209,8 @@ game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:
 
 end)
 
-Section:NewButton("FSM", "ButtonInfo", function()
+
+Section:NewButton("Flashiest Swordsmen", "ButtonInfo", function()
     local args = {
     [1] = "SwitchC",
     [2] = "Flashiest Swordsman"
