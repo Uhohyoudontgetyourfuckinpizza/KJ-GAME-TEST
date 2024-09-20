@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))() local Window = Library.CreateLib("Wave Hub", "DarkTheme")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))() local Window = Library.CreateLib("KJ HUB", "DarkTheme")
 
 local Tab = Window:NewTab("Not just a kj game")
 
@@ -229,5 +229,113 @@ local args = {
 }
 
 game:GetService("Players").LocalPlayer.PlayerGui.TopBar.UIScript.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+local Tab = Window:NewTab("KJ REMASTERED GAME")
+
+local Section = Tab:NewSection("Character Selection")
+
+Section:NewButton("Admin char", "ButtonInfo", function()
+    local args = {
+    [1] = "Character",
+    [2] = "Kagenou",
+    [3] = "Select"
+}
+
+game:GetService("ReplicatedStorage").Attribute:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Suiryu (early access)", "ButtonInfo", function()
+    local args = {
+    [1] = "Character",
+    [2] = "EarlyAccess",
+    [3] = "Select"
+}
+
+game:GetService("ReplicatedStorage").Attribute:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("KJ", "ButtonInfo", function()
+    local args = {
+    [1] = "Character",
+    [2] = "KJ",
+    [3] = "Select"
+}
+
+game:GetService("ReplicatedStorage").Attribute:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Gojo spawn thingy", "ButtonInfo", function()
+    game:GetService("ReplicatedStorage").Spawns.Gojo:FireServer()
+
+end)
+
+Section:NewButton("Sukuna", "ButtonInfo", function()
+    local args = {
+    [1] = "Character",
+    [2] = "Sukuna",
+    [3] = "Select"
+}
+
+game:GetService("ReplicatedStorage").Attribute:FireServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("Ult Anims + Moves") 
+
+Section:NewButton("Suiryu (ult not finished)", "ButtonInfo", function()
+    local args = {
+    [1] = "Suiryu"
+}
+
+game:GetService("ReplicatedStorage").UltimateUsed:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Kj", "ButtonInfo", function()
+    local args = {
+    [1] = "Serious"
+}
+
+game:GetService("ReplicatedStorage").UltimateUsed:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Gojo", "ButtonInfo", function()
+   local args = {
+    [1] = "Gojo"
+}
+
+game:GetService("ReplicatedStorage").UltimateUsed:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Sukuna", "ButtonInfo", function()
+    local args = {
+    [1] = "Sukuna"
+}
+
+game:GetService("ReplicatedStorage").UltimateUsed:FireServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("acceries+")
+
+Section:NewButton("Saitama Gloves", "ButtonInfo", function()
+    game:GetService("ReplicatedStorage").AccessoryRemotes.Glove:FireServer()
+
+end)
+
+Section:NewButton("KJ Aura", "ButtonInfo", function()
+    game:GetService("ReplicatedStorage").AccessoryRemotes.KJAura:FireServer()
+
+end)
+
+Section:NewButton("Light yagami's dark aura.", "ButtonInfo", function()
+    game:GetService("ReplicatedStorage").AccessoryRemotes.DarkAura:FireServer()
 
 end)
