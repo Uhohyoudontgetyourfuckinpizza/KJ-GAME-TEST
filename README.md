@@ -381,3 +381,13 @@ game:GetService("ReplicatedStorage").ChangeCharacter:FireServer(unpack(args))
 end)
 
 
+local Tab = Window:NewTab("TSB")
+
+local Section = Tab:NewSection("Custom Movesets")
+
+Section:NewButton("KJ", "ButtonInfo", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/kJ%20Moveset%20V2%20by%20camerawoman"))()
+end)
+
+Section:NewButton("Toji (need atomic)", "ButtonInfo", function() loadstring(game:HttpGet('https://pastebin.com/raw/VQnyWP5D'))()
+end)
+
