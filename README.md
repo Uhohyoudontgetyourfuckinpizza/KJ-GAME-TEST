@@ -339,3 +339,45 @@ Section:NewButton("Light yagami's dark aura.", "ButtonInfo", function()
     game:GetService("ReplicatedStorage").AccessoryRemotes.DarkAura:FireServer()
 
 end)
+
+local Tab = Window:NewTab("Battlegrounds Mania")
+
+local Section = Tab:NewSection("YOU NEED EARLY ACCESS AND KJ ACCESS")
+
+Section:NewButton("KJ", "ButtonInfo", function()
+    local args = {
+    [1] = {
+        [1] = "KJ",
+        [2] = game:GetService("Players").LocalPlayer
+    }
+}
+
+game:GetService("ReplicatedStorage").ChangeCharacter:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("JUN", "ButtonInfo", function()
+    local args = {
+    [1] = {
+        [1] = "Jun",
+        [2] = game:GetService("Players").LocalPlayer
+    }
+}
+
+game:GetService("ReplicatedStorage").ChangeCharacter:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("MINOS PRIME", "ButtonInfo", function()
+    local args = {
+    [1] = {
+        [1] = "Minos",
+        [2] = game:GetService("Players").LocalPlayer
+    }
+}
+
+game:GetService("ReplicatedStorage").ChangeCharacter:FireServer(unpack(args))
+
+end)
+
+
