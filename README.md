@@ -391,3 +391,283 @@ end)
 Section:NewButton("Toji (need atomic)", "ButtonInfo", function() loadstring(game:HttpGet('https://pastebin.com/raw/VQnyWP5D'))()
 end)
 
+local Tab = Window:NewTab("The Kj battlegrounds")
+
+local Section = Tab:NewSection("character selection")
+
+Section:NewButton("KJ", "ButtonInfo", function()
+    local args = {
+    [1] = "KJ"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Charchange:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("STEALTH (need ea)", "ButtonInfo", function()
+    local args = {
+    [1] = "Stealth"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Charchange:FireServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("KJ Base moves (cooldowns)")
+
+Section:NewButton("Ravage (with quote)", "ButtonInfo", function()
+    local args = {
+    [1] = "KJ",
+    [2] = "Ravage",
+    [3] = "Ravage"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local messages = {"Dang", "Isnt iT.", "KILL KJ DAY", "WEAK"}
+
+local function sendMessage(text)
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(text, "All")
+end
+
+for _, message in ipairs(messages) do
+    sendMessage(message)
+    wait(1.7) 
+end
+
+end)
+
+Section:NewButton("Swift Kick", "ButtonInfo", function()
+    local args = {
+    [1] = "KJ",
+    [2] = "SwiftSweep",
+    [3] = "Swift Sweep"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Collertal (with quote)", "ButtonInfo", function()
+    local args = {
+    [1] = "KJ",
+    [2] = "CollateralRuin",
+    [3] = "Collateral Ruin"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local messages = {"HMPH"}
+
+local function sendMessage(text)
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(text, "All")
+end
+
+for _, message in ipairs(messages) do
+    sendMessage(message)
+    wait(1.7) -- Wait time
+end
+
+end)
+
+local Section = Tab:NewSection("KJ ULT")
+
+Section:NewButton("activate ult (NEED ULT)", "ButtonInfo", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").Remotes.Ultimate:FireServer(unpack(args))
+
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- messages u wanna send
+local messages = {"COME AS CLOSE AS YOU WANT", "HOWEVER", "THIS IS THE LAST TIME"}
+
+-- the function to send the messages
+local function sendMessage(text)
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(text, "All")
+end
+
+for _, message in ipairs(messages) do
+    sendMessage(message)
+    wait(1.7) -- Wait time
+end
+
+end)
+
+Section:NewButton("kj slap", "ButtonInfo", function()
+    local args = {
+    [1] = "KJ",
+    [2] = "MightySlap",
+    [3] = "Mighty Slap"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Five seasons", "ButtonInfo", function()
+    local args = {
+    [1] = "KJ",
+    [2] = "FiveSeasons",
+    [3] = "Five Seasons"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- messages u wanna send
+local messages = {"kj 20 series.", "five", "seasons", "Die."}
+
+-- the function to send the messages
+local function sendMessage(text)
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(text, "All")
+end
+
+for _, message in ipairs(messages) do
+    sendMessage(message)
+    wait(1.7) -- Wait time
+end
+
+end)
+
+
+Section:NewButton("Stoic bomb", "ButtonInfo", function()
+    local args = {
+    [1] = "KJ",
+    [2] = "StoicBomb",
+    [3] = "Stoic Bomb"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- messages u wanna send
+local messages = {"KJ 20 SERIES", "STOIC", "BOMB", "..."}
+
+-- the function to send the messages
+local function sendMessage(text)
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(text, "All")
+end
+
+for _, message in ipairs(messages) do
+    sendMessage(message)
+    wait(1.7) -- Wait time
+end
+
+end)
+
+Section:NewButton("DROPKICK", "ButtonInfo", function()
+   local args = {
+    [1] = "KJ",
+    [2] = "Dropkick",
+    [3] = "20-20-20 Dropkick"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("stealth base + ult")
+
+Section:NewButton("Flash barrage", "ButtonInfo", function()
+    local args = {
+    [1] = "Stealth",
+    [2] = "FlashBarrage",
+    [3] = "Flash Barrage"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Thunderclap", "ButtonInfo", function()
+    local args = {
+    [1] = "Stealth",
+    [2] = "ThunderClap",
+    [3] = "Thunder Clap"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Flashkick", "ButtonInfo", function()
+    local args = {
+    [1] = "Stealth",
+    [2] = "FlashKick",
+    [3] = "Flash Kick"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("WhirlWind", "ButtonInfo", function()
+    local args = {
+    [1] = "Stealth",
+    [2] = "WhirlingCrush",
+    [3] = "Whirling Crush"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Ionse", "ButtonInfo", function()
+    local args = {
+    [1] = "Stealth",
+    [2] = "Ionise",
+    [3] = "Ionise"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Move:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("ult (wont work)", "ButtonInfo", function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").Remotes.Ultimate:FireServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("Gamepass")
+
+Section:NewButton("Kill sounds", "ButtonInfo", function()
+    local args = {
+    [1] = "8788677208"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Killsound:FireServer(unpack(args))
+
+end)
