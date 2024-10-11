@@ -1624,7 +1624,7 @@ end
 
 --[[Ult Activation]]
 local args = {
-    [1] = "I MAY BE a SORCERER",
+    [1] = "Finally I get out after being stuck for 1000 years!",
     [2] = "All"
 }
 
@@ -1661,7 +1661,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://16002726844 "
+AnimAnim.AnimationId = "rbxassetid://18897115785 "
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
