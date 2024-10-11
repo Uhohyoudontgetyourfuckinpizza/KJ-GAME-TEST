@@ -1217,6 +1217,9 @@ player.CharacterAdded:Connect(function(newCharacter)
 end) 
 end)
 
+Section:NewButton("Sorcerer That everyone knows", "ButtonInfo", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Uhohyoudontgetyourfuckinpizza/REWORK-FREE-VIP-RELEASE/refs/heads/main/README.md",true))();
+end)
+
 local Tab = Window:NewTab("The Kj battlegrounds")
 
 local Section = Tab:NewSection("character selection")
